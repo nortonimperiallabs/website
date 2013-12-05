@@ -126,6 +126,7 @@ div#donate {
   bottom: 0em;
   width: 6em;
   height: 6em;
+  transition: bottom 0.5s;
  }
 
 @media (max-height: 55em) {
@@ -136,9 +137,6 @@ div#donate {
 
 @media (max-height: 25em) { div#donate { display: none } } 
  
-/* @media (max-width: 58em) and (max-height: 42em) { div#donate { display:none } }*/
- /*@media (max-width: 52em) and (max-height: 65em) { div#donate { display:none } }*/
- 
 div#donate a {
   display: block;
   width: 100%;
@@ -148,8 +146,6 @@ div#donate a {
  
 div#donate a img {
   width: 4em;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
  }
  
 div#donate a span {
