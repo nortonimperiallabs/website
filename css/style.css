@@ -3,6 +3,11 @@
  margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+ }
+
 body {
   text-align: center;
   background-color: #333;
@@ -19,7 +24,7 @@ div#crest {
   border-style: solid;
   position: relative;
   left: 50%;
-  margin: 2em 3em 1em -5em;
+  margin: 4em 3em 0 -5em;
  }
 
 div#crest img {
@@ -29,14 +34,13 @@ div#crest img {
  }
 
 div#headline {
-  margin-top: 0.6em;
   width: 100%;
   color: white;
  }
  
 div#headline h1#title {
   font-size: 4em;
-  padding: 0.6em 1em 0.2em 1em;
+  padding: 0.4em 0.3em 0.2em 0.3em;
   font-weight: normal;
   font-family: "Ovo",serif;
  }
@@ -76,7 +80,6 @@ div#links ul li {
 
 div#links ul li a {
   text-decoration: none;
-  color: inherit;
   display: block;
   width: 100%;
   height: 100%;
@@ -112,8 +115,72 @@ div#menu {
 div#menu p a {
   text-decoration: none;
   display: block;
-  color: inherit;
   width: 1.5em;
   height: 1.3em;
   padding-top: 0.1em;
  }
+ 
+div#donate {
+  position: fixed;
+  right: 5em;
+  bottom: 0em;
+  width: 6em;
+  height: 6em;
+ }
+
+@media (max-height: 55em) {
+  @media (max-width: 65em) { div#donate { right: 2em; } } 
+  @media (max-width: 58em) { div#donate { right: 1em; } }
+  @media (max-width: 53em) { div#donate { display: none } }
+ }
+
+@media (max-height: 25em) { div#donate { display: none } } 
+ 
+/* @media (max-width: 58em) and (max-height: 42em) { div#donate { display:none } }*/
+ /*@media (max-width: 52em) and (max-height: 65em) { div#donate { display:none } }*/
+ 
+div#donate a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5em 1em 1em 1em;
+ }
+ 
+div#donate a img {
+  width: 4em;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+ }
+ 
+div#donate a span {
+  display: none;
+  color: white;
+  font-weight: bold;
+ }
+ 
+div#donate:hover {
+  bottom: 5em;
+  transition: bottom 0.5s;
+ }
+ 
+div#donate:hover a span {
+  display: block;
+  position: absolute;
+  width: 6em;
+  bottom: 3em;
+  background-color: #ff5454;
+  padding: 0.2em 0.1em;
+ }
+
+div#donate:hover a span:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 1em 1em 0 0;
+  border-color: #ff5454 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -1em;
+  left: 4em;
+}
