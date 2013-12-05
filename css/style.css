@@ -71,38 +71,71 @@ div#links ul li {
   float: left;
   width: 5em;
   height: 5em;
-  border-radius: 50%;
-  background-color: dodgerblue;
   color: white;
   font-weight: bold;
   margin: 1em;
  }
-
+ 
 div#links ul li a {
   text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  background-color: dodgerblue;
  }
-
+ 
+div#links ul li:hover a {
+  position: relative;
+  left: -0.5em;
+  top: -0.5em;
+  width: 120%;
+  height: 120%;
+  transition: width 0.5s;
+  transition: height 0.5s;
+  transition: left 0.5s;
+  transition: top 0.5s;
+ }
+ 
 div#links ul li a img{
   width: 3em;
   margin: 1em;
  }
 
+div#links ul li:hover a img {
+  width: 4em;
+  transition: width 0.5s;
+ }
+
 div#links ul li a span.desc {
   display: none;
   position: relative;
-  top: 2em;
+  top: 1.5em;
+  padding: 0.5em;
+  background-color: dodgerblue
  }
  
 div#links ul li:hover a span.desc {
   display: inline;
  }
  
-div#links ul li:hover a img {
+div#links ul li:hover a span.desc:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 0.5em 0.5em 0.5em;
+  border-color: dodgerblue transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -0.5em;
+  margin-left: -0.35em;
+  left: 50%;
+}
+ 
+/*div#links ul li:hover a img {
   display: none;
- }
+ }*/
  
 div#menu {
   position: fixed;
