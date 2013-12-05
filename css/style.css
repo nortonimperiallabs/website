@@ -1,0 +1,65 @@
+* {
+ padding: 0;
+ margin: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #eeeff1;
+  font-family: "Bitter",serif;
+  /*font-family: "Open Sans",sans-serif;*/
+ }
+
+div#headline {
+  width: 100%;
+  color: white;
+  background-color: #25c0b8;
+ }
+ 
+div#headline h1#title {
+ font-size: 6em;
+ padding: 0.3em;
+
+ }
+
+div#headline p#caption {
+  position: relative;
+  background-color: dodgerblue;
+  padding: 0.3em 2em 0.5em 2em;
+  font-size: 2.8em;
+  font-weight: bold;
+ }
+
+div#links {
+  position: relative;
+  width: 35em;
+  left: 50%;
+  margin: 3em 0 5em -18em;
+  padding-bottom: 5em;
+ }
+
+div#links ul {
+  list-style: outside none;
+ }
+ 
+div#links ul li {
+  float: left;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: #e86f50;
+  margin: 1em;
+ }
+
+div#links ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+ }
+ 
+div#links ul li a img{
+  width: 3em;
+  margin: 1em;
+ }
