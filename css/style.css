@@ -87,13 +87,13 @@ div#links ul li a img{
   margin: 1em;
  }
 
-div#links ul li span.desc {
+div#links ul li a span.desc {
   display: none;
   position: relative;
-  top: -3em;
+  top: 2em;
  }
  
-div#links ul li:hover span.desc {
+div#links ul li:hover a span.desc {
   display: inline;
  }
  
