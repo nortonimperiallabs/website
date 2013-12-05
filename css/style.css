@@ -5,36 +5,57 @@
 
 body {
   text-align: center;
-  background-color: #eeeff1;
+  background-color: #333;
   font-family: "Bitter",serif;
-  /*font-family: "Open Sans",sans-serif;*/
+ }
+
+div#crest {
+  width: 8em;
+  height: 8em;
+  padding: 0.8em;
+  border-radius: 50%;
+  border-width: 0.2em;
+  border-color: white;
+  border-style: solid;
+  position: relative;
+  left: 50%;
+  margin: 2em 3em 1em -5em;
+ }
+
+div#crest img {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
  }
 
 div#headline {
+  margin-top: 0.6em;
   width: 100%;
   color: white;
-  background-color: #25c0b8;
  }
  
 div#headline h1#title {
- font-size: 6em;
- padding: 0.3em;
-
+  font-size: 4em;
+  padding: 0.6em 1em 0.2em 1em;
+  font-weight: normal;
+  font-family: "Ovo",serif;
  }
 
 div#headline p#caption {
   position: relative;
-  background-color: dodgerblue;
-  padding: 0.5em 2em 0.5em 2em;
-  font-size: 2.8em;
-  font-weight: bold;
+  width: 20.5em;
+  left: 50%;
+  margin-left:-10em;
+  font-size: 2em;
+  font-weight: normal;
+  font-family: "Ovo",serif;
  }
 
 div#links {
   position: relative;
-  width: 42em;
+  width: 35em;
   left: 50%;
-  margin: 3em 0 5em -21.5em;
+  margin: 4em 0 6em -18em;
   padding-bottom: 5em;
  }
 
@@ -47,7 +68,7 @@ div#links ul li {
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  background-color: #e86f50;
+  background-color: dodgerblue;
   color: white;
   font-weight: bold;
   margin: 1em;
@@ -66,10 +87,6 @@ div#links ul li a img{
   margin: 1em;
  }
 
-div#links ul li:hover {
-  box-shadow: 0 0 8px #e86f50;
- }
-
 div#links ul li span.desc {
   display: none;
   position: relative;
@@ -82,4 +99,21 @@ div#links ul li:hover span.desc {
  
 div#links ul li:hover a img {
   display: none;
+ }
+ 
+div#menu {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  color: white;
+  font-size: 2em;
+ }
+
+div#menu p a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  width: 1.5em;
+  height: 1.3em;
+  padding-top: 0.1em;
  }
