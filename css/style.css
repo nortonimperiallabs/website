@@ -12,9 +12,11 @@ body {
   text-align: center;
   background-color: #333;
   font-family: "Bitter",serif;
+  color: white;
  }
 
 div#crest {
+  display: none;
   width: 8em;
   height: 8em;
   padding: 0.8em;
@@ -34,8 +36,8 @@ div#crest img {
  }
 
 div#headline {
+  margin-top: 3em;
   width: 100%;
-  color: white;
  }
  
 div#headline h1#title {
@@ -47,19 +49,47 @@ div#headline h1#title {
 
 div#headline p#caption {
   position: relative;
-  width: 20.5em;
+  width: 23em;
   left: 50%;
-  margin-left:-10em;
+  margin-left:-11.5em;
   font-size: 2em;
   font-weight: normal;
   font-family: "Ovo",serif;
  }
 
+div#cta {
+  position: relative;
+  left: 50%;
+  font-size: 1.5em;
+  margin: 2em 5em 1em -16em;
+  width: 33em;
+  text-align: left;
+  font-family: "Ovo",serif;
+ }
+
+a.button {
+  text-align: center;
+  display: block;
+  position: relative;
+  left: 50%;
+  font-size: 1.3em;
+  font-family: "Bitter",serif;
+  width: 7em;
+  border-radius: 0.1em;
+  margin: 1em 1em 1em -5.4em;
+  padding: 0.5em 1.5em;
+  background-color: dodgerblue;
+}
+
+a.button:hover {
+  background-color: hsl(210, 100%, 65%);
+}
+
 div#links {
   position: relative;
-  width: 35em;
+  width: 42em;
   left: 50%;
-  margin: 4em 0 6em -18em;
+  margin: 4em 0 6em -21em;
   padding-bottom: 5em;
  }
 
@@ -115,11 +145,11 @@ div#links ul li a span.desc {
   background-color: dodgerblue
  }
  
-div#links ul li:hover a span.desc {
+div#links ul li/*:hover*/ a span.desc {
   display: inline;
  }
  
-div#links ul li:hover a span.desc:before {
+div#links ul li/*:hover*/ a span.desc:before {
   content: '';
   position: absolute;
   border-style: solid;
